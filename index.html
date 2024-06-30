@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather | App</title>
+  <link rel="stylesheet" href="wether.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="header">
+      <div class="search_box">
+        <input type="text" placeholder="Enter your Location" class="input_box">
+        <button class="fa-solid fa-magnifying-glass" id="searchBtn"></button>
+      </div>
+    </div>
+
+    <div class="loc-not-found">
+      <h1>Sorry, Location not found !!!</h1>
+      <img src="./img/404.png">
+    </div>
+
+    <div class=" weather_body">
+      <img src="./img/cloud.png" alt="weather image" class="weather_image">
+
+      <div class="weather_box">
+        <p class="temperature">0 <sup>°C</sup></p>
+        <p class="description">Light Rain</p>
+      </div>
+
+      <div class="weather_detail">
+
+        <div class="humidity">
+          <i class="fa-solid fa-droplet"></i>
+          <div class="text">
+            <span id="humidity">45%</span>
+            <p>Humidity</p>
+          </div>
+        </div>
+
+        <div class="wind">
+          <i class="fa-solid fa-wind"></i>
+          <div class="text">
+            <span id="wind">12 Km/H</span>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="wether.js"></script>
+  <script src="https://kit.fontawesome.com/aa671ce7f0.js" crossorigin="anonymous"></script>
+  <!--sweet alert -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+
+</html>
