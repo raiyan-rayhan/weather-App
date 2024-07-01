@@ -6,9 +6,10 @@
   outline: none;
   font-family: sans-serif;
 }
-body {
+.weather {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #000;
@@ -124,4 +125,18 @@ body {
   font-size: 18px;
   color: #6b6b6b6b;
   margin-block-end: 15px;
+}
+
+.footer{
+  background-color: #ababab;
+  text-align: center;
+}
+.footer h2{
+  font-size: 16px;
+  color: #000;
+}
+.footer h2 a{
+  text-decoration: underline;
+  color: darkslategray;
+  font-weight: 700;
 }
